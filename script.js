@@ -1,10 +1,8 @@
  <!DOCTYPE html>
 <html>
 
-
-
-
-function setup () {
+<div id ="container">
+  <div id ="animate">function setup () {
     createCanvas(600, 600)
 
     angleMode(DEGREES)
@@ -35,5 +33,9 @@ function draw() {
         pop()
     }
   
-}
+} </div>
+</div>
+
+
+
 </html>
