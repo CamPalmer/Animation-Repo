@@ -21,7 +21,7 @@ function draw() {
     translate (width / 2, height / 2)
 
 for (var i = 0; i < 200; i++) {
-    PushManager()
+    push()
 
 SpeechRecognitionAlternative(sin(frameCount + i) * 100)
 
@@ -33,5 +33,6 @@ SpeechRecognitionAlternative(sin(frameCount + i) * 100)
 
     rect(0, 600 - i * 3, 600 - i * 3, 200 - i)
     }
-   PopStateEvent()
+   pop()
 }
+
