@@ -1,31 +1,31 @@
-
+ <!DOCTYPE html>
+<html>
+<body>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+</body>
+</html>
 
 
 function setup () {
-createCanvas(windowWidth, windowHeight)
+    createCanvas(600, 600)
 
-angleMode(DEGREES)
-rectMode(CENTER)
-
-
-
-
+    angleMode(DEGREES)
+    rectMode(CENTER)
 }
-
-
 
 
 function draw() {
     background (10,20,30)
     noFill()
-    stroke(255)
+ 
 
     translate (width / 2, height / 2)
 
-for (var i = 0; i < 200; i++) {
-    push()
+    for (var i = 0; i < 200; i++) {
+        push()
 
-SpeechRecognitionAlternative(sin(frameCount + i) * 100)
+    rotate(sin(frameCount + i) * 100)
 
     var r = map(sin(frameCount), -1, 1, 50, 255)
     var g = map(cos(frameCount / 2), -1, 1, 50, 255)
@@ -34,7 +34,9 @@ SpeechRecognitionAlternative(sin(frameCount + i) * 100)
     stroke(r, g, b)
 
     rect(0, 600 - i * 3, 600 - i * 3, 200 - i)
+        
+        pop()
     }
-   pop()
+  
 }
 
