@@ -1,10 +1,7 @@
  <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+
+
 
 
 function setup () {
@@ -31,7 +28,7 @@ function draw() {
     var g = map(cos(frameCount / 2), -1, 1, 50, 255)
     var b = map(sin(frameCount / 4), -1, 1, 50, 255)
 
-    stroke(r, g, b)
+    stroke(255, 0, 0)
 
     rect(0, 600 - i * 3, 600 - i * 3, 200 - i)
         
@@ -39,4 +36,4 @@ function draw() {
     }
   
 }
-
+</html>
